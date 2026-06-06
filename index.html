@@ -81,7 +81,11 @@
   .container { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad-x); }
   .narrow { max-width: 880px; }
 
-  h1, h2, h3, h4 { font-family: "Fraunces", serif; font-weight: 400; line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); }
+  h1, h2, h3, h4 { font-family: "Fraunces", serif; font-weight: 400; line-height: 1.12; letter-spacing: -0.018em; color: var(--ink); margin: 0; }
+  h1 { font-size: clamp(1.85rem, 3.2vw, 2.55rem); font-weight: 400; }
+  h2 { font-size: clamp(1.45rem, 2.3vw, 1.85rem); font-weight: 400; }
+  h3 { font-size: 1.06rem; font-weight: 500; letter-spacing: -0.01em; }
+  p { margin: 0; }
   a { color: inherit; text-decoration: none; }
 
   .eyebrow {
@@ -158,10 +162,10 @@
   .rating-pill .stars { display: inline-flex; gap: 1px; }
   .rating-pill .stars svg { width: 0.95rem; height: 0.95rem; color: var(--star); }
   .rating-pill b { color: var(--ink); font-weight: 600; }
-  .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5rem); font-weight: 300; margin: 0.4rem 0 1.3rem; }
+  .hero h1 { margin: 0.5rem 0 0.9rem; }
   .hero h1 em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
-  .hero-tagline { font-family: "Fraunces", serif; font-style: italic; font-size: clamp(1.05rem, 1.6vw, 1.32rem); color: var(--accent-deep); margin: 0.7rem 0 1.4rem; letter-spacing: -0.01em; }
-  .hero-lead { font-size: clamp(1.02rem, 1.35vw, 1.16rem); color: var(--muted); max-width: 44ch; margin-bottom: 2rem; }
+  .hero-tagline { font-family: "Fraunces", serif; font-style: italic; font-size: 1.02rem; color: var(--accent-deep); margin: 0 0 1.1rem; letter-spacing: -0.01em; }
+  .hero-lead { font-size: 0.98rem; line-height: 1.65; color: var(--muted); max-width: 44ch; margin-bottom: 1.7rem; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
   .hero-chips { display: flex; flex-wrap: wrap; gap: 0.7rem 1.4rem; margin-top: 2.1rem; }
   .chip { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.86rem; color: var(--muted); }
@@ -179,8 +183,8 @@
   .block.soft { background: var(--bg-soft); }
   .section-head { max-width: 62ch; margin-bottom: clamp(2.4rem, 5vh, 3.8rem); }
   .section-head.center { margin-inline: auto; text-align: center; }
-  .section-head h2 { font-size: clamp(2.05rem, 4.4vw, 3.3rem); font-weight: 300; margin-top: 1rem; }
-  .section-head p { color: var(--muted); margin-top: 1rem; font-size: 1.05rem; }
+  .section-head h2 { margin-top: 0.8rem; }
+  .section-head p { color: var(--muted); margin-top: 0.85rem; font-size: 0.98rem; line-height: 1.65; max-width: 56ch; }
 
   /* Services */
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow-md); }
@@ -191,7 +195,7 @@
   .svc-ico { width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--accent-deep); margin-bottom: 1.3rem; background: var(--bg); transition: border-color 0.4s ease, transform 0.5s var(--ease-spring); }
   .svc-ico svg { width: 1.4rem; height: 1.4rem; }
   .svc:hover .svc-ico { border-color: var(--accent); transform: translateY(-3px); }
-  .svc h3 { font-size: 1.3rem; font-weight: 500; margin-bottom: 0.55rem; }
+  .svc h3 { margin-bottom: 0.5rem; }
   .svc p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
 
   /* Trust strip — clean light row with cert logos */
@@ -204,7 +208,7 @@
   .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem 2rem; }
   .step { position: relative; padding-top: 2.1rem; border-top: 1px solid var(--line-strong); }
   .step .idx { position: absolute; top: -0.15rem; left: 0; font-family: "Fraunces", serif; font-size: 0.92rem; color: var(--accent-deep); letter-spacing: 0.08em; }
-  .step h3 { font-size: 1.22rem; font-weight: 500; margin-bottom: 0.4rem; }
+  .step h3 { margin-bottom: 0.4rem; }
   .step p { color: var(--muted); font-size: 0.93rem; }
 
   /* Projects */
@@ -240,19 +244,37 @@
   .media-ph span { position: relative; font-family: "Fraunces", serif; font-size: 0.86rem; font-weight: 400;
     letter-spacing: 0.02em; color: var(--accent-deep); opacity: 0.62; }
   .proj .media-ph span { display: none; }
-  .about-body h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); font-weight: 300; margin: 1rem 0 1.3rem; }
+  .about-body h2 { margin: 0.8rem 0 1.1rem; }
   .about-body p { color: var(--muted); margin-bottom: 1.1rem; }
   .about-list { list-style: none; margin-top: 1.6rem; display: grid; gap: 0.7rem; }
   .about-list li { display: flex; gap: 0.7rem; align-items: flex-start; color: var(--ink); font-size: 0.96rem; }
   .about-list svg { width: 1.2rem; height: 1.2rem; color: var(--accent); flex: none; margin-top: 0.2rem; }
 
   /* Reviews */
-  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
-  a.review-link { text-decoration: none; color: inherit; display: block; }
-  a.review-link .review { transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease, border-color 0.3s ease; }
+  /* Reviews carousel — single row, equal cards, arrow navigation */
+  .reviews-carousel { position: relative; }
+  .reviews-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 2 * 1.2rem) / 3); gap: 1.2rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 0.4rem 0.2rem 1.4rem; scrollbar-width: none; }
+  .reviews-track::-webkit-scrollbar { display: none; }
+  .reviews-track > * { scroll-snap-align: start; }
+  a.review-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+  a.review-link .review { height: 100%; min-height: 240px; transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease, border-color 0.3s ease; }
+  a.review-link .review-quote { display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
   a.review-link:hover .review, a.review-link:focus-visible .review { transform: translateY(-3px); border-color: var(--line-strong); box-shadow: var(--shadow-md); }
   a.review-link:focus-visible { outline: none; }
   a.review-link:focus-visible .review { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .rc-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.6rem; }
+  .rc-dots { display: flex; gap: 0.5rem; }
+  .rc-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--line-strong); transition: background 0.3s ease, transform 0.3s ease; padding: 0; border: none; cursor: pointer; }
+  .rc-dot.is-active { background: var(--accent); transform: scale(1.4); }
+  .rc-arrows { display: inline-flex; gap: 0.55rem; }
+  .rc-btn { width: 44px; height: 44px; border-radius: 50%; background: var(--surface); border: 1px solid var(--line-strong); color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s var(--ease-spring); }
+  .rc-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-2px); }
+  .rc-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .rc-btn:disabled { opacity: 0.35; cursor: default; transform: none; background: var(--surface); color: var(--ink); border-color: var(--line); }
+  .rc-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .reviews-foot { margin-top: 1.4rem; }
+  @media (max-width: 1000px) { .reviews-track { grid-auto-columns: calc((100% - 1 * 1.1rem) / 2); gap: 1.1rem; } }
+  @media (max-width: 640px)  { .reviews-track { grid-auto-columns: 88%; gap: 1rem; } a.review-link .review { min-height: 0; } a.review-link .review-quote { -webkit-line-clamp: unset; } }
   .review { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.6rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 0.9rem; }
   .review .stars { display: inline-flex; gap: 2px; }
   .review .stars svg { width: 1.05rem; height: 1.05rem; color: var(--star); }
@@ -264,7 +286,7 @@
 
   /* B2B band */
   .b2b { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: clamp(1.8rem, 4vw, 2.8rem); box-shadow: var(--shadow-md); max-width: 880px; margin-inline: auto; }
-  .b2b h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 400; margin: 0.7rem 0 0.9rem; }
+  .b2b h2 { margin: 0.6rem 0 0.8rem; }
   .b2b p { color: var(--muted); max-width: 60ch; }
   .b2b .mt { margin-top: 1.4rem; }
 
@@ -272,7 +294,7 @@
   .faq-grid { display: grid; grid-template-columns: 1fr; gap: 0.8rem; max-width: 880px; }
   details.faq { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 0 1.4rem; box-shadow: var(--shadow-sm); transition: border-color 0.3s ease; }
   details.faq[open] { border-color: var(--line-strong); }
-  details.faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; font-family: "Fraunces", serif; font-size: 1.18rem; color: var(--ink); }
+  details.faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem 0; font-family: "Fraunces", serif; font-size: 1.02rem; color: var(--ink); }
   details.faq summary::-webkit-details-marker { display: none; }
   details.faq summary .ico { width: 1.4rem; height: 1.4rem; flex: none; position: relative; transition: transform 0.4s var(--ease-spring); color: var(--accent-deep); }
   details.faq[open] summary .ico { transform: rotate(45deg); }
@@ -299,8 +321,8 @@
 
   /* CTA band */
   .cta-band { text-align: center; }
-  .cta-band h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 300; max-width: 18ch; margin: 1rem auto 1.2rem; }
-  .cta-band p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; font-size: 1.05rem; }
+  .cta-band h2 { max-width: 22ch; margin: 0.9rem auto 1rem; }
+  .cta-band p { color: var(--muted); max-width: 52ch; margin: 0 auto 1.6rem; font-size: 0.98rem; line-height: 1.65; }
   .cta-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
 
   /* Footer */
@@ -565,7 +587,8 @@
         <h2>Beoordeeld door huiseigenaren in Noord-Holland.</h2>
         <p>Echte reviews van klanten op Google &mdash; klik op een review om alle beoordelingen te bekijken.</p>
       </div>
-      <div class="reviews-grid reveal" data-stagger>
+      <div class="reviews-carousel reveal">
+      <div class="reviews-track" id="reviewsTrack">
         <a class="review-link" href="https://www.google.com/search?q=Schreuder+stucadoors+B.V.+Reviews&rldimm=11339835348078782054&tbm=lcl#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer">
           <article class="review">
             <span class="stars" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg></span>
@@ -609,7 +632,15 @@
           </article>
         </a>
       </div>
-      <p class="reveal"><a class="link-arrow" href="https://www.google.com/search?q=Schreuder+stucadoors+B.V.+Reviews&rldimm=11339835348078782054&tbm=lcl#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer">Lees alle reviews op Google <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+      <div class="rc-nav">
+        <div class="rc-dots" id="reviewsDots" aria-hidden="true"></div>
+        <div class="rc-arrows">
+          <button type="button" class="rc-btn" id="reviewsPrev" aria-label="Vorige review"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button type="button" class="rc-btn" id="reviewsNext" aria-label="Volgende review"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      </div>
+      <p class="reveal reviews-foot"><a class="link-arrow" href="https://www.google.com/search?q=Schreuder+stucadoors+B.V.+Reviews&rldimm=11339835348078782054&tbm=lcl#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer">Lees alle reviews op Google <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
     </section>
 
     <!-- About -->
@@ -803,6 +834,45 @@
   document.getElementById("burger").addEventListener("click", openSheet);
   document.getElementById("sheetClose").addEventListener("click", closeSheet);
   sheet.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeSheet));
+
+  /* Reviews carousel: arrow + dot navigation, scroll-snap based */
+  const track = document.getElementById("reviewsTrack");
+  if (track) {
+    const prev = document.getElementById("reviewsPrev");
+    const next = document.getElementById("reviewsNext");
+    const dotsEl = document.getElementById("reviewsDots");
+    const cards = [...track.children];
+    const cardStep = () => {
+      const a = cards[0], b = cards[1];
+      return b ? (b.getBoundingClientRect().left - a.getBoundingClientRect().left) : a.getBoundingClientRect().width;
+    };
+    const pages = () => {
+      const vw = track.clientWidth;
+      const cw = cardStep();
+      return Math.max(1, Math.round(cards.length - (vw / cw) + 1));
+    };
+    cards.forEach((_, i) => {
+      const d = document.createElement("button");
+      d.type = "button";
+      d.className = "rc-dot";
+      d.setAttribute("aria-label", "Ga naar review " + (i + 1));
+      d.addEventListener("click", () => track.scrollTo({ left: i * cardStep(), behavior: "smooth" }));
+      dotsEl.appendChild(d);
+    });
+    const dots = [...dotsEl.children];
+    const update = () => {
+      const idx = Math.round(track.scrollLeft / Math.max(1, cardStep()));
+      dots.forEach((d, i) => d.classList.toggle("is-active", i === idx));
+      const max = track.scrollWidth - track.clientWidth - 1;
+      prev.disabled = track.scrollLeft <= 1;
+      next.disabled = track.scrollLeft >= max;
+    };
+    prev.addEventListener("click", () => track.scrollBy({ left: -cardStep(), behavior: "smooth" }));
+    next.addEventListener("click", () => track.scrollBy({ left: cardStep(), behavior: "smooth" }));
+    track.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
