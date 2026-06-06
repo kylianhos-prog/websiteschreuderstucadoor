@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stukadoor Purmerend &amp; Noord-Holland | Schreuder Stucadoors B.V.</title>
+<meta name="description" content="Schreuder Stucadoors uit Purmerend verzorgt strak glad stucwerk, sierpleister, spachtelputz en buitengevelisolatie in heel Noord-Holland. NOA-erkend, aangesloten bij Afbouwkeur, met garantie. Vraag vrijblijvend een offerte aan." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Schreuder Stucadoors B.V.",
+  "url": "https://www.schreuderstucadoors.nl/",
+  "telephone": "+31629517459",
+  "email": "info@schreuderstucadoors.nl",
+  "foundingDate": "2012",
+  "priceRange": "$$",
+  "address": { "@type": "PostalAddress", "streetAddress": "Visserijweg 63 C", "postalCode": "1446 AR", "addressLocality": "Purmerend", "addressRegion": "Noord-Holland", "addressCountry": "NL" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Noord-Holland" },
+  "knowsAbout": ["glad stucwerk", "sierpleister", "spachtelputz", "buitengevelisolatie", "spackspuiten", "renovatie stucwerk"]
+}
+</script>
+<style>
+  :root {
+    --bg: #f3f6f8;
+    --bg-soft: #e7edf1;
+    --surface: #ffffff;
+    --ink: #182533;
+    --muted: #586675;
+    --muted-dim: #8593a1;
+    --line: rgba(24, 37, 51, 0.10);
+    --line-strong: rgba(24, 37, 51, 0.16);
+    --accent: #2480b8;
+    --accent-soft: #4a9bce;
+    --accent-deep: #1a6291;
+    --accent-wash: #e3eef6;
+    --star: #f3a93b;
+    --shadow-sm: 0 2px 8px -3px rgba(20, 45, 70, 0.16);
+    --shadow-md: 0 18px 40px -26px rgba(18, 45, 72, 0.32), 0 6px 16px -12px rgba(36, 128, 184, 0.16);
+    --shadow-lg: 0 34px 70px -36px rgba(14, 38, 62, 0.36), 0 10px 24px -14px rgba(36, 128, 184, 0.18);
+    --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+    --maxw: 1220px;
+    --pad-x: clamp(1.25rem, 5vw, 4rem);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Soft atmospheric light + very fine grain */
+  body::before {
+    content: "";
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(55rem 38rem at 82% -10%, rgba(36, 128, 184, 0.08), transparent 60%),
+      radial-gradient(46rem 46rem at -6% 12%, rgba(36, 128, 184, 0.06), transparent 58%);
+  }
+  body::after {
+    content: "";
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+
+  .wrap { position: relative; z-index: 2; }
+  .container { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad-x); }
+  .narrow { max-width: 880px; }
+
+  h1, h2, h3, h4 { font-family: "Fraunces", serif; font-weight: 400; line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); }
+  a { color: inherit; text-decoration: none; }
+
+  .eyebrow {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--accent-deep); display: inline-flex; align-items: center; gap: 0.7rem;
+  }
+  .eyebrow::before { content: ""; width: 1.8rem; height: 1px; background: var(--accent); opacity: 0.7; }
+  .eyebrow.center { justify-content: center; }
+
+  /* Buttons */
+  .btn {
+    --b-bg: var(--accent); --b-fg: #fff;
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 0.95rem 1.6rem;
+    font-family: "Hanken Grotesk", sans-serif; font-size: 0.92rem; font-weight: 600; letter-spacing: 0.01em;
+    border-radius: 3px; background: var(--b-bg); color: var(--b-fg);
+    border: 1px solid transparent; cursor: pointer;
+    transition: transform 0.4s var(--ease-spring), box-shadow 0.4s var(--ease-spring), background 0.3s ease, color 0.3s ease;
+    will-change: transform;
+  }
+  .btn svg { width: 1.05em; height: 1.05em; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -14px rgba(36, 128, 184, 0.5); }
+  .btn:active { transform: translateY(0); }
+  .btn:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 3px; }
+  .btn--ghost { --b-bg: transparent; --b-fg: var(--ink); border-color: var(--line-strong); }
+  .btn--ghost:hover { border-color: var(--accent); color: var(--accent-deep); box-shadow: none; }
+  .btn--wa { --b-bg: #1faf54; --b-fg: #fff; }
+  .btn--wa:hover { box-shadow: 0 16px 30px -14px rgba(31, 175, 84, 0.5); }
+  .btn--big { padding: 1.1rem 1.9rem; font-size: 0.98rem; }
+
+  .link-arrow { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-deep); font-weight: 600; font-size: 0.92rem; transition: gap 0.4s var(--ease-spring), color 0.3s ease; }
+  .link-arrow svg { width: 1.1em; height: 1.1em; }
+  .link-arrow:hover { gap: 0.85rem; color: var(--accent); }
+
+  /* Header */
+  header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; transition: background 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease; border-bottom: 1px solid transparent; }
+  header.scrolled { background: rgba(247, 243, 236, 0.82); backdrop-filter: blur(14px) saturate(1.1); border-bottom-color: var(--line); box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .brand { display: flex; align-items: center; gap: 0.7rem; }
+  .brand-logo { height: 52px; width: auto; display: block; mix-blend-mode: multiply; }
+  @media (max-width: 600px) { .brand-logo { height: 42px; } }
+  .brand-mark { width: 36px; height: 36px; border: 1px solid var(--accent); border-radius: 50%; display: grid; place-items: center; color: var(--accent-deep); font-family: "Fraunces", serif; font-size: 1.15rem; flex: none; background: var(--surface); }
+  .brand-name { font-family: "Fraunces", serif; font-size: 1.2rem; line-height: 1; }
+  .brand-name small { display: block; font-family: "Hanken Grotesk", sans-serif; font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted-dim); margin-top: 3px; }
+  .nav-links { display: flex; align-items: center; gap: 2.1rem; }
+  .nav-links a { position: relative; font-size: 0.92rem; color: var(--muted); transition: color 0.3s ease; }
+  .nav-links a::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 100%; height: 1px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease-spring); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+  .nav-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+  .nav-cta { display: flex; align-items: center; gap: 1.3rem; }
+  .nav-phone { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.92rem; font-weight: 500; color: var(--ink); transition: color 0.3s ease; }
+  .nav-phone svg { width: 1rem; height: 1rem; color: var(--accent); }
+  .nav-phone:hover { color: var(--accent-deep); }
+  .burger { display: none; width: 44px; height: 44px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 3px; cursor: pointer; color: var(--ink); place-items: center; }
+  .burger svg { width: 1.3rem; height: 1.3rem; }
+
+  /* Mobile sheet */
+  .sheet { position: fixed; inset: 0; z-index: 60; background: rgba(247, 243, 236, 0.98); backdrop-filter: blur(8px); display: flex; flex-direction: column; padding: 1.4rem var(--pad-x) 2rem; opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.4s ease, transform 0.4s var(--ease-spring), visibility 0.4s; }
+  .sheet.open { opacity: 1; visibility: visible; transform: translateY(0); }
+  .sheet-top { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .sheet-close { width: 44px; height: 44px; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 3px; color: var(--ink); cursor: pointer; }
+  .sheet-close svg { width: 1.3rem; height: 1.3rem; }
+  .sheet-links { display: flex; flex-direction: column; gap: 0.2rem; margin-top: 1.4rem; }
+  .sheet-links a { font-family: "Fraunces", serif; font-size: 1.9rem; padding: 0.55rem 0; border-bottom: 1px solid var(--line); color: var(--ink); transition: color 0.3s ease, padding-left 0.4s var(--ease-spring); }
+  .sheet-links a:hover { color: var(--accent); padding-left: 0.6rem; }
+  .sheet-foot { margin-top: auto; display: flex; flex-direction: column; gap: 0.8rem; }
+
+  /* Hero */
+  .hero { position: relative; padding-top: clamp(7.5rem, 17vh, 11rem); padding-bottom: clamp(3rem, 7vh, 5rem); }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .rating-pill { display: inline-flex; align-items: center; gap: 0.6rem; background: var(--surface); border: 1px solid var(--line); border-radius: 100px; padding: 0.45rem 0.9rem; box-shadow: var(--shadow-sm); font-size: 0.85rem; color: var(--muted); margin-bottom: 1.4rem; }
+  .rating-pill .stars { display: inline-flex; gap: 1px; }
+  .rating-pill .stars svg { width: 0.95rem; height: 0.95rem; color: var(--star); }
+  .rating-pill b { color: var(--ink); font-weight: 600; }
+  .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5rem); font-weight: 300; margin: 0.4rem 0 1.3rem; }
+  .hero h1 em { font-style: italic; color: var(--accent-deep); font-weight: 400; }
+  .hero-tagline { font-family: "Fraunces", serif; font-style: italic; font-size: clamp(1.05rem, 1.6vw, 1.32rem); color: var(--accent-deep); margin: 0.7rem 0 1.4rem; letter-spacing: -0.01em; }
+  .hero-lead { font-size: clamp(1.02rem, 1.35vw, 1.16rem); color: var(--muted); max-width: 44ch; margin-bottom: 2rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; }
+  .hero-chips { display: flex; flex-wrap: wrap; gap: 0.7rem 1.4rem; margin-top: 2.1rem; }
+  .chip { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.86rem; color: var(--muted); }
+  .chip svg { width: 1.05rem; height: 1.05rem; color: var(--accent); flex: none; }
+
+  .hero-figure { position: relative; aspect-ratio: 4 / 5; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lg); }
+  .hero-figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-figure::after { content: ""; position: absolute; inset: 0; background: linear-gradient(165deg, transparent 55%, rgba(33, 28, 23, 0.22)); }
+  .hero-badge { position: absolute; left: -1.3rem; bottom: 1.8rem; background: var(--surface); border: 1px solid var(--line); border-radius: 5px; padding: 1rem 1.2rem; box-shadow: var(--shadow-md); max-width: 15rem; }
+  .hero-badge .num { font-family: "Fraunces", serif; font-size: 1.7rem; color: var(--accent-deep); line-height: 1; }
+  .hero-badge .lbl { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+
+  /* Section frame */
+  section.block { padding-block: clamp(4rem, 10vh, 7.5rem); }
+  .block.soft { background: var(--bg-soft); }
+  .section-head { max-width: 62ch; margin-bottom: clamp(2.4rem, 5vh, 3.8rem); }
+  .section-head.center { margin-inline: auto; text-align: center; }
+  .section-head h2 { font-size: clamp(2.05rem, 4.4vw, 3.3rem); font-weight: 300; margin-top: 1rem; }
+  .section-head p { color: var(--muted); margin-top: 1rem; font-size: 1.05rem; }
+
+  /* Services */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: var(--shadow-md); }
+  .svc { background: var(--surface); padding: 2.1rem 1.85rem; position: relative; transition: background 0.5s var(--ease-spring); }
+  .svc::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--accent); transform: scaleY(0); transform-origin: top; transition: transform 0.5s var(--ease-spring); }
+  .svc:hover { background: var(--accent-wash); }
+  .svc:hover::before { transform: scaleY(1); }
+  .svc-ico { width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--accent-deep); margin-bottom: 1.3rem; background: var(--bg); transition: border-color 0.4s ease, transform 0.5s var(--ease-spring); }
+  .svc-ico svg { width: 1.4rem; height: 1.4rem; }
+  .svc:hover .svc-ico { border-color: var(--accent); transform: translateY(-3px); }
+  .svc h3 { font-size: 1.3rem; font-weight: 500; margin-bottom: 0.55rem; }
+  .svc p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+
+  /* Trust strip — clean light row with cert logos */
+  .trust-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.8rem 2.6rem; padding: 1.6rem 1.4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .trust-strip img { height: 54px; width: auto; opacity: 0.85; transition: opacity 0.3s ease, transform 0.3s ease; }
+  .trust-strip img:hover { opacity: 1; transform: translateY(-2px); }
+  @media (max-width: 600px) { .trust-strip img { height: 42px; } .trust-strip { gap: 1.1rem 1.4rem; } }
+
+  /* Process */
+  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem 2rem; }
+  .step { position: relative; padding-top: 2.1rem; border-top: 1px solid var(--line-strong); }
+  .step .idx { position: absolute; top: -0.15rem; left: 0; font-family: "Fraunces", serif; font-size: 0.92rem; color: var(--accent-deep); letter-spacing: 0.08em; }
+  .step h3 { font-size: 1.22rem; font-weight: 500; margin-bottom: 0.4rem; }
+  .step p { color: var(--muted); font-size: 0.93rem; }
+
+  /* Projects */
+  .proj-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
+  .proj { position: relative; overflow: hidden; border-radius: 6px; border: 1px solid var(--line); aspect-ratio: 4 / 3; box-shadow: var(--shadow-sm); }
+  .proj:nth-child(1) { grid-column: span 4; }
+  .proj:nth-child(2) { grid-column: span 2; }
+  .proj:nth-child(3) { grid-column: span 2; }
+  .proj:nth-child(4) { grid-column: span 2; }
+  .proj:nth-child(5) { grid-column: span 2; }
+  .proj img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-spring); }
+  .proj::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20, 16, 12, 0.74), transparent 58%); }
+  .proj:hover img { transform: scale(1.05); }
+  .proj-cap { position: absolute; left: 1.2rem; bottom: 1rem; z-index: 2; color: #fff; }
+  .proj-cap .t { font-family: "Fraunces", serif; font-size: 1.12rem; }
+  .proj-cap .s { font-size: 0.8rem; color: rgba(255, 255, 255, 0.78); }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .about-figure { position: relative; aspect-ratio: 5 / 6; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lg); }
+  .about-figure img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Self-contained limewash placeholder — renders without external assets.
+     Swap any .media-ph for a real <img> once project photos are available. */
+  .media-ph { position: absolute; inset: 0; display: grid; place-items: end start; padding: 1.1rem 1.2rem;
+    background:
+      radial-gradient(130% 100% at 18% 14%, #eef3f7 0%, transparent 58%),
+      radial-gradient(120% 110% at 88% 92%, #d9e4ec 0%, transparent 52%),
+      linear-gradient(152deg, #e8eef3 0%, #d3dee7 58%, #c3d1dc 100%); }
+  .media-ph::before { content: ""; position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply; opacity: 0.4; }
+  .media-ph span { position: relative; font-family: "Fraunces", serif; font-size: 0.86rem; font-weight: 400;
+    letter-spacing: 0.02em; color: var(--accent-deep); opacity: 0.62; }
+  .proj .media-ph span { display: none; }
+  .about-body h2 { font-size: clamp(2rem, 4.2vw, 3.1rem); font-weight: 300; margin: 1rem 0 1.3rem; }
+  .about-body p { color: var(--muted); margin-bottom: 1.1rem; }
+  .about-list { list-style: none; margin-top: 1.6rem; display: grid; gap: 0.7rem; }
+  .about-list li { display: flex; gap: 0.7rem; align-items: flex-start; color: var(--ink); font-size: 0.96rem; }
+  .about-list svg { width: 1.2rem; height: 1.2rem; color: var(--accent); flex: none; margin-top: 0.2rem; }
+
+  /* Reviews */
+  .reviews-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+  .review { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.6rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 0.9rem; }
+  .review .stars { display: inline-flex; gap: 2px; }
+  .review .stars svg { width: 1.05rem; height: 1.05rem; color: var(--star); }
+  .review-quote { color: var(--ink); font-size: 0.96rem; line-height: 1.6; flex: 1; }
+  .review-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 0.9rem; }
+  .review-author { font-weight: 600; font-size: 0.9rem; }
+  .review-src { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; color: var(--muted-dim); }
+  .review-src svg { width: 0.95rem; height: 0.95rem; }
+
+  /* B2B band */
+  .b2b { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: clamp(1.8rem, 4vw, 2.8rem); box-shadow: var(--shadow-md); max-width: 880px; margin-inline: auto; }
+  .b2b h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 400; margin: 0.7rem 0 0.9rem; }
+  .b2b p { color: var(--muted); max-width: 60ch; }
+  .b2b .mt { margin-top: 1.4rem; }
+
+  /* FAQ */
+  .faq-grid { display: grid; grid-template-columns: 1fr; gap: 0.8rem; max-width: 880px; }
+  details.faq { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 0 1.4rem; box-shadow: var(--shadow-sm); transition: border-color 0.3s ease; }
+  details.faq[open] { border-color: var(--line-strong); }
+  details.faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; font-family: "Fraunces", serif; font-size: 1.18rem; color: var(--ink); }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary .ico { width: 1.4rem; height: 1.4rem; flex: none; position: relative; transition: transform 0.4s var(--ease-spring); color: var(--accent-deep); }
+  details.faq[open] summary .ico { transform: rotate(45deg); }
+  details.faq .answer { color: var(--muted); padding-bottom: 1.3rem; max-width: 64ch; font-size: 0.97rem; }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 3.5rem); }
+  .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: clamp(1.8rem, 3vw, 2.6rem); box-shadow: var(--shadow-md); }
+  .field { margin-bottom: 1rem; }
+  .field label { display: block; font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.45rem; }
+  .field input, .field textarea { width: 100%; background: var(--bg); border: 1px solid var(--line-strong); border-radius: 4px; padding: 0.85rem 1rem; color: var(--ink); font-family: inherit; font-size: 0.95rem; transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; }
+  .field textarea { resize: vertical; min-height: 120px; }
+  .field input::placeholder, .field textarea::placeholder { color: var(--muted-dim); }
+  .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); background: var(--surface); box-shadow: 0 0 0 3px rgba(36, 128, 184, 0.16); }
+  .contact-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.4rem; }
+
+  .info-row { display: flex; gap: 1rem; padding-block: 1.15rem; border-bottom: 1px solid var(--line); }
+  .info-row:last-of-type { border-bottom: none; }
+  .info-ico { width: 42px; height: 42px; flex: none; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--accent-deep); background: var(--surface); }
+  .info-ico svg { width: 1.2rem; height: 1.2rem; }
+  .info-row .k { font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-dim); }
+  .info-row .v { font-size: 1.04rem; color: var(--ink); }
+  .info-row .v a:hover { color: var(--accent-deep); }
+
+  /* CTA band */
+  .cta-band { text-align: center; }
+  .cta-band h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 300; max-width: 18ch; margin: 1rem auto 1.2rem; }
+  .cta-band p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; font-size: 1.05rem; }
+  .cta-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--line); padding-block: 3.4rem 2.4rem; margin-top: 1rem; background: var(--bg-soft); }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.3fr; gap: 2rem; }
+  .foot-brand p { color: var(--muted); font-size: 0.92rem; margin-top: 1rem; max-width: 34ch; }
+  .foot-col h4 { font-family: "Hanken Grotesk", sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-dim); margin-bottom: 1rem; }
+  .foot-col a { display: block; color: var(--muted); font-size: 0.92rem; padding: 0.25rem 0; transition: color 0.3s ease; }
+  .foot-col a:hover { color: var(--accent-deep); }
+  .foot-col address { font-style: normal; color: var(--muted); font-size: 0.92rem; line-height: 1.9; }
+  .foot-col address a:hover { color: var(--accent-deep); }
+  .foot-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2.6rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+  .foot-bottom p { color: var(--muted-dim); font-size: 0.82rem; }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s var(--ease-spring), transform 0.8s var(--ease-spring); }
+  .reveal.in { opacity: 1; transform: none; }
+  [data-stagger] > * { opacity: 0; transform: translateY(18px); transition: opacity 0.7s var(--ease-spring), transform 0.7s var(--ease-spring); }
+  [data-stagger].in > * { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+    .reveal, [data-stagger] > * { opacity: 1; transform: none; }
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; }
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  }
+  @media (max-width: 860px) {
+    .nav-links, .nav-phone { display: none; }
+    .burger { display: grid; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-figure { order: -1; aspect-ratio: 16 / 11; max-height: 58vh; }
+    .hero-badge { left: auto; right: 1rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-figure { order: -1; max-height: 56vh; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .ba-grid { grid-template-columns: 1fr; }
+    .proj-grid { grid-template-columns: repeat(2, 1fr); }
+    .proj:nth-child(n) { grid-column: span 2; }
+  }
+  @media (max-width: 560px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .proj-grid { grid-template-columns: 1fr; }
+    .proj:nth-child(n) { grid-column: span 1; }
+    .foot-grid { grid-template-columns: 1fr; }
+    .nav-cta .btn:not(.burger) { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Schreuder Stucadoors home">
+        <img class="brand-logo" src="assets/logo.jpg" alt="Schreuder Stucadoors B.V. — Net even meer aandacht, net even meer service" width="190" height="52" />
+      </a>
+      <nav class="nav-links" aria-label="Hoofdmenu">
+        <a href="#diensten">Diensten</a>
+        <a href="#werkwijze">Werkwijze</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#over">Over ons</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="nav-phone" href="tel:+31629517459">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg>
+          06 29 51 74 59
+        </a>
+        <a class="btn" href="#contact">Offerte aanvragen</a>
+        <button class="burger" id="burger" aria-label="Menu openen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile sheet -->
+  <div class="sheet" id="sheet" aria-hidden="true">
+    <div class="sheet-top">
+      <span class="brand-name">Schreuder<small>Stucadoors B.V.</small></span>
+      <button class="sheet-close" id="sheetClose" aria-label="Menu sluiten">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav class="sheet-links" aria-label="Mobiel menu">
+      <a href="#diensten">Diensten</a>
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#over">Over ons</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="sheet-foot">
+      <a class="btn" href="#contact">Offerte aanvragen</a>
+      <a class="btn btn--ghost" href="tel:+31629517459">Bel 06 29 51 74 59</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="rating-pill reveal">
+            <span class="stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg>
+            </span>
+            <span><b>Erkend stukadoorsbedrijf</b> · sinds 2012</span>
+          </span>
+          <h1 class="reveal">Strak afgewerkte wanden, <em>vakkundig</em> gestuukt.</h1>
+          <p class="hero-tagline reveal">Net even meer aandacht, net even meer service.</p>
+          <p class="hero-lead reveal">Van glad stucwerk en sierpleister binnen tot buitengevelisolatie — Schreuder Stucadoors levert een egaal, duurzaam resultaat met heldere afspraken en garantie op het werk. Voor particulier én zakelijk in heel Noord-Holland.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn--big" href="#contact">
+              Vraag vrijblijvend een offerte aan
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--big" href="tel:+31629517459">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg>
+              Bel 06 29 51 74 59
+            </a>
+          </div>
+          <div class="hero-chips reveal" data-stagger>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg> NOA-erkend</span>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2 8 12.7 4 8.8 9.5 8 12 3z" stroke-linejoin="round"/></svg> Afbouwkeur</span>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg> Sinds 2012</span>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"/></svg> Garantie op het werk</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <figure class="hero-figure">
+            <img src="assets/hero-trap.jpg" alt="Strak gestuukte trapopgang met houten balken in een woning in Noord-Holland" loading="eager" />
+          </figure>
+          <div class="hero-badge">
+            <div class="num">12+ jaar</div>
+            <div class="lbl">ervaring in binnen- en buitenstucwerk</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="block container" id="diensten">
+      <div class="section-head reveal">
+        <span class="eyebrow">Onze diensten</span>
+        <h2>Stucwerk binnen en buiten, vakkundig uitgevoerd.</h2>
+        <p>Of het nu gaat om een gladde wand, sfeervolle sierpleister of het isoleren van uw gevel — wij leveren een afwerking die jaren meegaat. Voor particuliere en zakelijke opdrachtgevers.</p>
+      </div>
+      <div class="services-grid reveal" data-stagger>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 20l5-5M14 4l6 6-9 3-3-3 6-6z" stroke-linejoin="round"/></svg></div>
+          <h3>Glad stucwerk binnen</h3>
+          <p>Strak, egaal pleisterwerk op wanden en plafonds — direct schilder- of behangklaar afgewerkt.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 19l4-9 4 5 2-3 4 7z" stroke-linejoin="round"/></svg></div>
+          <h3>Sierpleister</h3>
+          <p>Decoratieve sierpleister met diepte en textuur — een warme, ambachtelijke uitstraling.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18c3-1 5-3 8-3s5 2 8 1M4 13c3-1 5-3 8-3s5 2 8 1M4 8c3-1 5-3 8-3s5 2 8 1"/></svg></div>
+          <h3>Spachtelputz</h3>
+          <p>Robuuste, structuurrijke afwerking voor binnen en buiten die jaren fraai en onderhoudsarm blijft.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V8l8-5 8 5v13M4 12h16M12 3v18"/></svg></div>
+          <h3>Buitengevelisolatie</h3>
+          <p>Een geïsoleerde, strak gepleisterde gevel die warmte binnenhoudt én uw woning verfraait.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="8" r="1"/><circle cx="13" cy="6" r="1"/><circle cx="17" cy="11" r="1"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="17" r="1"/><path d="M3 21l3-3"/></svg></div>
+          <h3>Spackspuiten</h3>
+          <p>Efficiënt en gelijkmatig spuitwerk voor wanden en plafonds, ook op grote oppervlakken.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M5 6v3M9 6v3M13 6v3M17 6v3M21 6v3M3 14h18"/></svg></div>
+          <h3>Plafondstucwerk</h3>
+          <p>Vlakke, strakke plafonds zonder oneffenheden — het rustige sluitstuk van elke ruimte.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20c2-6 4-9 8-9s6 3 8 9M8 11V5M16 11V5M6 5h12"/></svg></div>
+          <h3>Sierlijsten &amp; ornamenten</h3>
+          <p>Klassieke sierlijsten en ornamenten die een ruimte allure en detail geven.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Renovatie &amp; herstel</h3>
+          <p>Beschadigd of korrelig stucwerk vakkundig hersteld tot een kaarsrecht, glad vlak.</p>
+        </article>
+        <article class="svc">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 8l7-5 7 5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Advies op maat</h3>
+          <p>We denken mee over materiaal en afwerking, zodat het resultaat past bij uw ruimte en wens.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trust strip: keurmerken -->
+    <section class="block container">
+      <div class="trust-strip reveal" data-stagger>
+        <img src="assets/keur-noa.png" alt="NOA — Nederlandse Ondernemersvereniging voor Afbouwbedrijven" loading="lazy" />
+        <img src="assets/keur-garantie.png" alt="NOA Garantie Afbouw" loading="lazy" />
+        <img src="assets/keur-afbouw.png" alt="Bedrijfschap Afbouw" loading="lazy" />
+        <img src="assets/keur-stuckeur.png" alt="Stuckeur keurmerk" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="block container" id="werkwijze">
+      <div class="section-head reveal">
+        <span class="eyebrow">Zo werken we</span>
+        <h2>Van offerte tot oplevering, in zes heldere stappen.</h2>
+        <p>U weet vooraf wat u krijgt — een duidelijke offerte, een vaste planning en garantie bij oplevering. Geen verrassingen achteraf.</p>
+      </div>
+      <div class="process-grid reveal" data-stagger>
+        <div class="step"><span class="idx">01</span><h3>Offerte aanvragen</h3><p>U laat ons weten wat u wilt laten doen — via het formulier of telefonisch.</p></div>
+        <div class="step"><span class="idx">02</span><h3>Opname op locatie</h3><p>We bekijken de situatie ter plekke en denken mee over de beste afwerking.</p></div>
+        <div class="step"><span class="idx">03</span><h3>Offerte op maat</h3><p>U ontvangt een heldere, gespecificeerde offerte zonder verborgen kosten.</p></div>
+        <div class="step"><span class="idx">04</span><h3>Inplannen</h3><p>We maken een vaste afspraak en stemmen de planning op uw situatie af.</p></div>
+        <div class="step"><span class="idx">05</span><h3>Vakkundige uitvoering</h3><p>Netjes afgeplakt, vakkundig gestuukt en opgeruimd achtergelaten.</p></div>
+        <div class="step"><span class="idx">06</span><h3>Oplevering met garantie</h3><p>We leveren samen op en u krijgt garantie op het uitgevoerde werk.</p></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="block soft" id="projecten">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Projecten</span>
+          <h2>Een greep uit ons werk.</h2>
+          <p>Resultaten die voor zich spreken — binnen en buiten, particulier en zakelijk in heel Noord-Holland.</p>
+        </div>
+        <div class="proj-grid reveal" data-stagger>
+          <figure class="proj"><img src="assets/proj-woonkamer.jpg" alt="Strak gestuukte woonkamer met haard en gladde wanden" loading="lazy" /><figcaption class="proj-cap"><div class="t">Glad stucwerk</div><div class="s">Woonkamer · Noord-Holland</div></figcaption></figure>
+          <figure class="proj"><img src="assets/proj-haard.jpg" alt="Woonkamer met strak afgewerkte wanden en plafond rond een haardpartij" loading="lazy" /><figcaption class="proj-cap"><div class="t">Wand &amp; plafond</div><div class="s">Woonkamer · Noord-Holland</div></figcaption></figure>
+          <figure class="proj"><img src="assets/proj-plafond.jpg" alt="Hal met strak gestuukt plafond en sierlijsten" loading="lazy" /><figcaption class="proj-cap"><div class="t">Plafond &amp; sierlijsten</div><div class="s">Hal · Noord-Holland</div></figcaption></figure>
+          <figure class="proj"><img src="assets/proj-gevel.jpg" alt="Buitengevel met strakke grijze pleisterlaag rond kozijnen" loading="lazy" /><figcaption class="proj-cap"><div class="t">Buitengevel</div><div class="s">Sierpleister · Noord-Holland</div></figcaption></figure>
+          <figure class="proj"><img src="assets/proj-ornament.jpg" alt="Plafond met sierlijst en ornamentrozet" loading="lazy" /><figcaption class="proj-cap"><div class="t">Sierlijsten &amp; ornament</div><div class="s">Plafonddetail · Noord-Holland</div></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="block container" id="reviews">
+      <div class="section-head reveal">
+        <span class="eyebrow">Wat klanten zeggen</span>
+        <h2>Beoordeeld door huiseigenaren in Noord-Holland.</h2>
+        <p>Onderstaande reviews zijn voorbeelden — vervang ze door echte Google-reviews zodra deze beschikbaar zijn.</p>
+      </div>
+      <div class="reviews-grid reveal" data-stagger>
+        <article class="review">
+          <span class="stars" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg></span>
+          <p class="review-quote">Voorbeeldreview — vervang door een echte Google-review van een tevreden klant.</p>
+          <div class="review-meta"><span class="review-author">Voornaam</span><span class="review-src"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 12.2c0-.6-.1-1.2-.2-1.8H12v3.4h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.1z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.6z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 12 2 10 10 0 0 0 3.1 7.4l3.3 2.6C7.2 7.6 9.4 5.9 12 5.9z"/></svg>Google</span></div>
+        </article>
+        <article class="review">
+          <span class="stars" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg></span>
+          <p class="review-quote">Voorbeeldreview — vervang door een echte Google-review van een tevreden klant.</p>
+          <div class="review-meta"><span class="review-author">Voornaam</span><span class="review-src"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 12.2c0-.6-.1-1.2-.2-1.8H12v3.4h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.1z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.6z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 12 2 10 10 0 0 0 3.1 7.4l3.3 2.6C7.2 7.6 9.4 5.9 12 5.9z"/></svg>Google</span></div>
+        </article>
+        <article class="review">
+          <span class="stars" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg></span>
+          <p class="review-quote">Voorbeeldreview — vervang door een echte Google-review van een tevreden klant.</p>
+          <div class="review-meta"><span class="review-author">Voornaam</span><span class="review-src"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 12.2c0-.6-.1-1.2-.2-1.8H12v3.4h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.1z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.6z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 12 2 10 10 0 0 0 3.1 7.4l3.3 2.6C7.2 7.6 9.4 5.9 12 5.9z"/></svg>Google</span></div>
+        </article>
+        <article class="review">
+          <span class="stars" aria-label="5 van 5 sterren"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.4 21l1.4-6.9L1.6 9.3l7-.8z"/></svg></span>
+          <p class="review-quote">Voorbeeldreview — vervang door een echte Google-review van een tevreden klant.</p>
+          <div class="review-meta"><span class="review-author">Voornaam</span><span class="review-src"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 12.2c0-.6-.1-1.2-.2-1.8H12v3.4h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.1z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1A10 10 0 0 0 2 12c0 1.6.4 3.1 1.1 4.6z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 12 2 10 10 0 0 0 3.1 7.4l3.3 2.6C7.2 7.6 9.4 5.9 12 5.9z"/></svg>Google</span></div>
+        </article>
+      </div>
+      <p class="reveal"><a class="link-arrow" href="https://www.google.com/search?q=Schreuder+Stucadoors+Purmerend" target="_blank" rel="noopener">Lees alle reviews op Google <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </section>
+
+    <!-- About -->
+    <section class="block soft" id="over">
+      <div class="container about-grid">
+        <figure class="about-figure reveal">
+          <img src="assets/aan-het-werk.jpg" alt="Stukadoor van Schreuder Stucadoors aan het spuiten in een woning" loading="lazy" />
+        </figure>
+        <div class="about-body reveal">
+          <span class="eyebrow">Over Schreuder Stucadoors</span>
+          <h2>Traditioneel vakmanschap, met oog voor de mens achter het project.</h2>
+          <p>Sinds 2012 een vast adres voor strak stucwerk in Noord-Holland. We behandelen elk project met grote zorg — voor particuliere én zakelijke opdrachtgevers — en werken volgens duidelijke afspraken en transparante offertes.</p>
+          <p>Een klantgerichte benadering staat voorop: we nemen de tijd voor communicatie, zodat het eindresultaat precies aansluit op uw wensen.</p>
+          <ul class="about-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> NOA-erkend en aangesloten bij Afbouwkeur</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Werkt uitsluitend met A-merk materialen</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Heldere afspraken, transparante offertes en garantie</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B -->
+    <section class="block container">
+      <div class="b2b reveal">
+        <span class="eyebrow">Voor aannemers &amp; bouwbedrijven</span>
+        <h2>Een vaste stukadoorspartner voor nieuwbouw en renovatie.</h2>
+        <p>Werkt u in de bouw en zoekt u een betrouwbare stukadoor die planning haalt en strak oplevert? We draaien mee in nieuwbouw- en renovatieprojecten in heel Noord-Holland, met heldere afspraken en korte lijnen.</p>
+        <div class="mt"><a class="link-arrow" href="#contact">Plan een zakelijke kennismaking <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block container" id="faq">
+      <div class="section-head reveal">
+        <span class="eyebrow">Veelgestelde vragen</span>
+        <h2>Goed om te weten.</h2>
+        <p>De antwoorden op de vragen die we het vaakst krijgen. Staat uw vraag er niet bij? Bel of mail ons gerust.</p>
+      </div>
+      <div class="faq-grid reveal" data-stagger>
+        <details class="faq" open>
+          <summary>Wat kost stucwerk per vierkante meter?
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="answer">De prijs hangt af van het soort stucwerk, de staat van de ondergrond en de oppervlakte. U ontvangt altijd een heldere, gespecificeerde offerte op maat — zonder verborgen kosten.</div>
+        </details>
+        <details class="faq">
+          <summary>In welke regio zijn jullie actief?
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="answer">We werken vanuit Purmerend in heel Noord-Holland, voor zowel particuliere als zakelijke opdrachtgevers.</div>
+        </details>
+        <details class="faq">
+          <summary>Hoe snel kan ik een offerte verwachten?
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="answer">Na een opname op locatie ontvangt u snel een duidelijke offerte op maat. We nemen de tijd om mee te denken over de beste afwerking voor uw situatie.</div>
+        </details>
+        <details class="faq">
+          <summary>Kan ik in de ruimte blijven wonen tijdens het werk?
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="answer">In de meeste gevallen wel. We plakken netjes af, werken schoon en laten de ruimte opgeruimd achter. Vers stucwerk heeft daarna nog wel droogtijd nodig.</div>
+        </details>
+        <details class="faq">
+          <summary>Krijg ik garantie op het werk?
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="answer">Ja. We leveren samen op en geven garantie op het uitgevoerde werk. Als NOA-erkend bedrijf en lid van Afbouwkeur staan we voor onze kwaliteit in.</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="block container">
+      <div class="cta-band reveal">
+        <span class="eyebrow center">Klaar voor strak stucwerk?</span>
+        <h2>Vraag vrijblijvend uw offerte aan.</h2>
+        <p>Vertel ons over uw wand, plafond of gevel. U krijgt snel een heldere offerte op maat — zonder verplichtingen.</p>
+        <div class="cta-actions">
+          <a class="btn btn--big" href="#contact">Offerte aanvragen</a>
+          <a class="btn btn--wa btn--big" href="https://wa.me/31629517459" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+            WhatsApp ons
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="block soft" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Neem contact op.</h2>
+          <p>Vraag vrijblijvend een offerte aan of stel uw vraag. We reageren snel en helder.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-card reveal" onsubmit="return false">
+            <div class="field"><label for="name">Naam</label><input id="name" type="text" placeholder="Uw naam" /></div>
+            <div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="naam@voorbeeld.nl" /></div>
+            <div class="field"><label for="phone">Telefoon</label><input id="phone" type="tel" placeholder="06 12 34 56 78" /></div>
+            <div class="field"><label for="msg">Uw project</label><textarea id="msg" placeholder="Vertel kort over uw stucwerkklus — wand, plafond of gevel…"></textarea></div>
+            <div class="contact-actions">
+              <button class="btn" type="submit">Offerte aanvragen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <a class="btn btn--wa" href="https://wa.me/31629517459" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </form>
+          <div class="contact-info reveal">
+            <div class="info-row">
+              <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.5 7-11a7 7 0 0 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div><div class="k">Adres</div><div class="v">Visserijweg 63 C, 1446 AR Purmerend</div></div>
+            </div>
+            <div class="info-row">
+              <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg></div>
+              <div><div class="k">Telefoon</div><div class="v"><a href="tel:+31629517459">06 29 51 74 59</a></div></div>
+            </div>
+            <div class="info-row">
+              <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div><div class="k">E-mail</div><div class="v"><a href="mailto:info@schreuderstucadoors.nl">info@schreuderstucadoors.nl</a></div></div>
+            </div>
+            <div class="info-row">
+              <div class="info-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></div>
+              <div><div class="k">Werkgebied</div><div class="v">Noord-Holland &amp; omstreken</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="#top" aria-label="Schreuder Stucadoors home">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">Schreuder<small>Stucadoors B.V.</small></span>
+          </a>
+          <p>Stukadoorsbedrijf uit Purmerend. Strak stucwerk binnen en buiten in heel Noord-Holland — sinds 2012.</p>
+        </div>
+        <nav class="foot-col" aria-label="Pagina's">
+          <h4>Menu</h4>
+          <a href="#diensten">Diensten</a>
+          <a href="#werkwijze">Werkwijze</a>
+          <a href="#projecten">Projecten</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#over">Over ons</a>
+        </nav>
+        <nav class="foot-col" aria-label="Diensten">
+          <h4>Diensten</h4>
+          <a href="#diensten">Glad stucwerk</a>
+          <a href="#diensten">Sierpleister</a>
+          <a href="#diensten">Spachtelputz</a>
+          <a href="#diensten">Buitengevelisolatie</a>
+          <a href="#diensten">Spackspuiten</a>
+        </nav>
+        <div class="foot-col">
+          <h4>Contact</h4>
+          <address>
+            Visserijweg 63 C<br />
+            1446 AR Purmerend<br />
+            <a href="tel:+31629517459">06 29 51 74 59</a><br />
+            <a href="mailto:info@schreuderstucadoors.nl">info@schreuderstucadoors.nl</a>
+          </address>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© <span id="year"></span> Schreuder Stucadoors B.V. — Alle rechten voorbehouden.</p>
+        <p>KvK 84024461 · Werkgebied Noord-Holland</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const header = document.getElementById("header");
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 24);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  const sheet = document.getElementById("sheet");
+  const openSheet = () => { sheet.classList.add("open"); sheet.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden"; };
+  const closeSheet = () => { sheet.classList.remove("open"); sheet.setAttribute("aria-hidden", "true"); document.body.style.overflow = ""; };
+  document.getElementById("burger").addEventListener("click", openSheet);
+  document.getElementById("sheetClose").addEventListener("click", closeSheet);
+  sheet.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeSheet));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        if (el.hasAttribute("data-stagger")) {
+          [...el.children].forEach((c, ci) => { c.style.transitionDelay = (ci * 65) + "ms"; });
+        }
+        el.classList.add("in");
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach((el, i) => {
+    el.style.transitionDelay = (Math.min(i, 4) * 70) + "ms";
+    io.observe(el);
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "schreuder-stucadoor",
+  "version": "1.0.0",
+  "description": "Premium website voor Schreuder Stucadoors B.V.",
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "shot": "node screenshot.mjs http://localhost:3000"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^24.41.0"
+  }
+}
