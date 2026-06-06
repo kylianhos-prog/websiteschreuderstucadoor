@@ -56,7 +56,8 @@ await page.evaluate(async () => {
   await new Promise((r) => setTimeout(r, 500));
 });
 
-await new Promise((r) => setTimeout(r, 600));
+// Wait past the safety-net reveal timer (1400ms) plus animation (~800ms).
+await new Promise((r) => setTimeout(r, 2400));
 await page.screenshot({ path: filePath, fullPage: true });
 await browser.close();
 

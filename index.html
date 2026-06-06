@@ -879,17 +879,31 @@
       if (e.isIntersecting) {
         const el = e.target;
         if (el.hasAttribute("data-stagger")) {
-          [...el.children].forEach((c, ci) => { c.style.transitionDelay = (ci * 65) + "ms"; });
+          [...el.children].forEach((c, ci) => { c.style.transitionDelay = (ci * 55) + "ms"; });
         }
         el.classList.add("in");
         io.unobserve(el);
       }
     });
-  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
-  document.querySelectorAll(".reveal").forEach((el, i) => {
-    el.style.transitionDelay = (Math.min(i, 4) * 70) + "ms";
+  }, { threshold: 0.02, rootMargin: "0px 0px 20% 0px" });
+  const reveals = document.querySelectorAll(".reveal");
+  reveals.forEach((el, i) => {
+    el.style.transitionDelay = (Math.min(i, 4) * 60) + "ms";
     io.observe(el);
   });
+  // Safety net: any reveal that hasn't fired within 1.4s gets unblocked.
+  // Guards against fast-scrolling users on mobile briefly seeing blank regions.
+  window.setTimeout(() => {
+    reveals.forEach((el) => {
+      if (!el.classList.contains("in")) {
+        if (el.hasAttribute("data-stagger")) {
+          [...el.children].forEach((c, ci) => { c.style.transitionDelay = (ci * 40) + "ms"; });
+        }
+        el.classList.add("in");
+        io.unobserve(el);
+      }
+    });
+  }, 1400);
 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
